@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Analyzer</title>
+</head>
+<body>
+    <h1>Name Analyzer</h1>
+    <p>
+        The Name Analyzer API takes the user's name and year of birth, <br>
+        then provides a descriptive breakdown of the user's 5 personality traits: <br>
+        extraversion, oppenness, aggreeableness, conscientiousness, and  neuroticism.<br>
+        This API's algorithm is based off of Zodiac sign astrology and name phonology.<br> 
+        As of right now, there are 288 possible output combinations. <br>
+        This can be easily increased by adding more descriptions and strength levels to each trait.
+    </p>
+    <form method="GET" action="/analyze">
+        <label>Username
+            <input type="text" name="name" required>
+        </label><br>
+        <label>Birthyear
+            <input type="number" name="birthyear" min="0" required>
+        </label><br>
+        <input type="submit" value="Log in">        
+    </form> 
+
+</body>
+</html>    

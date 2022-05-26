@@ -1,0 +1,104 @@
+{
+    "e": [
+        {
+            "strength": "l",
+            "d": "You are most comfortable interacting in small groups and with one-on-one relationships, and are energized by spending time alone."
+        },
+        {
+            "strength": "h",
+            "d": "You seek out novelty and excitement, and enjoy being the center of attention. You tend to seek out social interaction because this is how you feel more energized."
+        }
+    ],
+    "e_hobbies": 
+        {
+            "l": [
+                {
+                    "hobby": "reading a good book"
+                },
+                {
+                    "hobby": "watching movies while eating your favorite snack"
+                },
+                {
+                    "hobby": "playing video games"
+                }
+            ],
+            "h": [
+                {
+                    "hobby": "spending time with family and friends"
+                },
+                {
+                    "hobby": "playing sports or games with a team"
+                },
+                {
+                    "hobby": "attending concerts or conventions"
+                }
+            ]
+        }
+        
+    ,
+    "o": [
+        {
+            "strength": "l",
+            "d": "You often find yourself resistant to change and lean towards analytical than creative. You excel in jobs that involve routine work."
+        },
+        {
+            "strength": "h",
+            "d": "You are imaginative, rather than practical. You are known to be creative, open to new and different ideas, and in touch with your feelings."
+        }
+    ],
+    "o_subjects": {
+        "l": [
+            {
+                "subject": "math"
+            },
+            {
+                "subject": "chemistry"
+            },
+            {
+                "subject": "physics"
+            }
+        ],
+        "h": [
+            {
+                "subject": "visual arts"
+            },
+            {
+                "subject": "creative writing"
+            },
+            {
+                "subject": "music"
+            }
+        ]
+    },
+    "a": [
+        {
+            "strength": "l",
+            "d": "You do well in situations that require difficult or objective decisions. Because of this, you can excel in being a scientist, critic, or soldier."
+        },
+        {
+            "strength": "h",
+            "d": "You find it important to get along with others. You are willing to put aside your interests for other people. People think you are helpful, friendly, considerate, and generous."
+        }
+    ],
+    "c": [
+        {
+            "strength": "l",
+            "d": "You like acting spontaneously and living in the moment. However, you may find it difficult to plan log-term goals."
+        },
+        {
+            "strength": "h",
+            "d": "You have a high level of self-discipline. You prefer to follow a plan, rather than act spontaneously."
+        }
+    ],
+    "n": [
+        {
+            "strength": "l",
+            "d": "You tend to be emotionally stable, calm, and do not constantly experience negative feelings."
+        },
+        {
+            "strength": "h",
+            "d": "You are very emotionally reactive, and may find it difficult to think clearly and cope with stress."
+        }
+    ]
+
+}

@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Name Analyzer API
+The Name Analyzer API takes the user's name and year of birth, then provides a descriptive breakdown of the user's 5 personality traits: extraversion, oppenness, aggreeableness, conscientiousness, and  neuroticism.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This API's algorithm is based off of Zodiac sign astrology and name phonology. 
 
-## Available Scripts
+As of right now, there are 288 possible output combinations. This can be easily increased by adding more descriptions and strength levels to each trait.
 
-In the project directory, you can run:
 
-### `npm start`
+## How to use
+1. Run `node src/server.js`
+2. GET`http://localhost:3000/{birthyear}/{name}`
+3. Outputs JSON file. Description in header "description".
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Example
+Request:
+`http://localhost:3000/2002/Jiliana`
+* birthyear = 2002
+* name = Jiliana
 
-### `npm test`
+Response:
+`{
+    "name": "Jiliana",
+    "birthyear": "2002",
+    "zodiac": "Horse",
+    "extraversion": "1.8",
+    "oppenness": "3.2",
+    "aggreableness": "2.2",
+    "conscientiousness": "1.1",
+    "neuroticism": "2.2",
+    "description": "You seek out novelty and excitement, and enjoy being the center of attention. You tend to seek out social interaction because this is how you feel more energized. One of your favorite pastimes is attending concerts or conventions. You are imaginative, rather than practical. You are known to be creative, open to new and different ideas, and in touch with your feelings. In school, you did particularly well in visual arts. You find it important to get along with others. You are willing to put aside your interests for other people. People think you are helpful, friendly, considerate, and generous. You have a high level of self-discipline. You prefer to follow a plan, rather than act spontaneously. You are very emotionally reactive, and may find it difficult to think clearly and cope with stress."
+}`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Credits
 
-### `npm run build`
+Descriptions and Research:
+https://www.simplypsychology.org/
+https://www.123test.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
