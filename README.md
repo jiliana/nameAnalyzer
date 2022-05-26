@@ -1,24 +1,31 @@
 # Name Analyzer API
 The Name Analyzer API takes the user's name and year of birth, then provides a descriptive breakdown of the user's 5 personality traits: extraversion, oppenness, aggreeableness, conscientiousness, and  neuroticism.
 
-This API's algorithm is based off of Zodiac sign astrology and name phonology. 
+This API's algorithm is based off of Zodiac sign astrology and name phonology (how words sound). 
 
 As of right now, there are 288 possible output combinations. This can be easily increased by adding more descriptions and strength levels to each trait.
 
 
 ## How to use
 1. Run `node src/server.js`
-2. GET`http://localhost:3000/{birthyear}/{name}`
-3. Outputs JSON file. Description in header "description".
+2. There are 2 ways to analyze:
+    * Using a web tool, GET`http://localhost:3000/{birthyear}/{name}`
+    * Using a browser, go to `http://localhost:3000/` and use the form to submit your query
+4. Outputs a JSON file. Description in header "description".
 
+## Output Description
+- Trait Values: numeric values of each personality trait 
+(0 to 1 is low, >1 is high)
+- Description: analysis based off of Trait Values
 
-### Example
+## Example
 Request:
 `http://localhost:3000/2002/Jiliana`
 * birthyear = 2002
 * name = Jiliana
 
 Response:
+
 `{
     "name": "Jiliana",
     "birthyear": "2002",
@@ -34,6 +41,10 @@ Response:
 ## Credits
 
 Descriptions and Research:
+
 https://www.simplypsychology.org/
+
 https://www.123test.com/
+
+https://www.chinahighlights.com/travelguide/chinese-zodiac/
 
